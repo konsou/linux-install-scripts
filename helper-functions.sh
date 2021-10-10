@@ -22,8 +22,10 @@ function ask_yes_no {
   fi
 
   if [[ "${USER_INPUT}" == "y" ]]; then
+    echo "returning success"
     return 0
   else
+    echo "returning failure"
     return 1
   fi
 }
