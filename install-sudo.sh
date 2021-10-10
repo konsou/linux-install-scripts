@@ -17,6 +17,7 @@ fi
 
 echo "You're root, nice!"
 echo "Installing sudo"
+apt update
 apt install sudo -y
 
 echo "Adding ${1} to sudoers"
@@ -24,7 +25,5 @@ echo "Adding ${1} to sudoers"
 
 echo "Done."
 
-echo "Refresh group membership for ${1}"
-exec su -l "${1}"
-
+echo "Run \"newgrp sudo\" and \"./start.sh\" to continue"
 
