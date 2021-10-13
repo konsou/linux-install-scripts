@@ -23,7 +23,7 @@ sudo apt update
 sudo apt upgrade -y
 
 echo "Install prerequisites"
-sudo apt install wget curl apt-transport-https gnupg2 rsync -y
+sudo apt install wget curl apt-transport-https gnupg2 rsync screen -y
 
 read -r -p "Install webmin? (Y/n): " USER_INPUT
 if [[ "${USER_INPUT}" == "y" || "${USER_INPUT}" == "Y" || "${USER_INPUT}" == "" ]]; then
