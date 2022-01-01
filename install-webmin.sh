@@ -12,7 +12,6 @@ else
   echo "Repo ${REPO} found in ${SOURCES_LIST}, not adding"
 fi
 
-exit 0
 echo "Download and add signing key"
 wget https://download.webmin.com/jcameron-key.asc
 sudo apt-key add jcameron-key.asc
